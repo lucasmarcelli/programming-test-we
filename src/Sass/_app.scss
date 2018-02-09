@@ -1,0 +1,14 @@
+.we-movies {
+  display: grid;
+
+  background-color: $black;
+  grid-template-rows: $nav-height 1fr;
+  grid-template-areas:
+          "navbar"
+          "content";
+}
+
+.content {
+  grid-area: content;
+}
+

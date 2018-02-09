@@ -1,0 +1,101 @@
+.details {
+  display: grid;
+  grid-template-rows: $header-height 1fr;
+  grid-template-areas:
+          "header"
+          "details";
+
+  .header {
+    grid-area: header;
+    background-color: $teal;
+    font-size: 32px;
+    font-weight: 300;
+    text-align: left;
+    color: $white;
+    display: flex;
+    align-items: center;
+    padding-left: 24px;
+
+  }
+
+  .details-section {
+    min-height: calc(100vh - #{$nav-height} - #{$header-height});
+    grid-area: details;
+    background-color: $white;
+
+    display: flex;
+    flex-direction: column;
+    padding-left: 24px;
+    padding-right: 24px;
+
+    .top {
+      display: flex;
+      padding-top: 24px;
+      justify-content: space-between;
+
+      .left {
+          flex: 1 1 150px;
+          img {
+            width: 128px;
+          }
+      }
+
+      .right {
+        margin-left: 24px;
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 100%;
+
+        .year {
+          font-size: 24px;
+          font-weight: 300;
+          text-align: left;
+          color: #747474;
+          margin-bottom: 4px;
+        }
+
+        .runtime {
+          font-size: 24px;
+          font-style: oblique;
+          text-align: left;
+          color: #747474;
+          margin-bottom: 16px;
+          margin-left: -3px;
+        }
+
+        .rating {
+          font-size: 16px;
+          text-align: left;
+          color: #000000;
+          margin-bottom: 16px;
+        }
+
+        .fav {
+          width: 112px;
+          height: 48px;
+          background-color: #86e4db;
+          border: solid 1px #6fcac2;
+          font-size: 12px;
+          text-transform: uppercase;
+          display: flex;
+          align-items: center;
+          text-align: center;
+          color: #757373;
+        }
+      }
+
+    }
+
+    .desc {
+      margin-top: 24px;
+      font-size: 12px;
+      letter-spacing: 0.3px;
+      text-align: left;
+      color: #747474;
+      padding-bottom: 24px;
+      border-bottom: 1px solid $brownish-gray;
+    }
+  }
+}
+
+

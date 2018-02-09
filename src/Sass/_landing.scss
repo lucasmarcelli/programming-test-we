@@ -1,0 +1,20 @@
+.landing {
+  background-color: $black;
+  display: flex;
+  flex-wrap: wrap;
+
+  .poster-link {
+    flex: 1 1 50%;
+
+    .poster {
+      min-width: 185px;
+      height: 280px;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }
+
+}
+
+

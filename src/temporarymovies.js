@@ -1,0 +1,129 @@
+/* eslint-disable */
+export const tempMovies = [
+    {
+        'vote_count':6638,
+        'id':198663,
+        'video':false,
+        'vote_average':7,
+        'title':'The Maze Runner',
+        'popularity':445.890202,
+        'poster_path':'\/coss7RgL0NH6g4fC2s5atvf3dFO.jpg',
+        'original_language':'en',
+        'original_title':'The Maze Runner',
+        'genre_ids':[
+            28,
+            9648,
+            878,
+            53
+        ],
+        'backdrop_path':'\/lkOZcsXcOLZYeJ2YxJd3vSldvU4.jpg',
+        'adult':false,
+        'overview':"Set in a post-apocalyptic world, young Thomas is deposited in a community of boys after his memory is erased, soon learning they're all trapped in a maze that will require him to join forces with fellow “runners” for a shot at escape.",
+        'release_date':'2014-09-10'
+    },
+    {
+        'vote_count':6334,
+        'id':346364,
+        'video':false,
+        'vote_average':7.1,
+        'title':'It',
+        'popularity':311.147708,
+        'poster_path':'\/9E2y5Q7WlCVNEhP5GiVTjhEhx1o.jpg',
+        'original_language':'en',
+        'original_title':'It',
+        'genre_ids':[
+            18,
+            27,
+            53
+        ],
+        'backdrop_path':'\/tcheoA2nPATCm2vvXw2hVQoaEFD.jpg',
+        'adult':false,
+        'overview':'In a small town in Maine, seven children known as The Losers Club come face to face with life problems, bullies and a monster that takes the shape of a clown called Pennywise.',
+        'release_date':'2017-09-05'
+    },
+    {
+        'vote_count':5632,
+        'id':211672,
+        'video':false,
+        'vote_average':6.4,
+        'title':'Minions',
+        'popularity':287.432646,
+        'poster_path':'\/q0R4crx2SehcEEQEkYObktdeFy.jpg',
+        'original_language':'en',
+        'original_title':'Minions',
+        'genre_ids':[
+            10751,
+            16,
+            12,
+            35
+        ],
+        'backdrop_path':'\/qLmdjn2fv0FV2Mh4NBzMArdA0Uu.jpg',
+        'adult':false,
+        'overview':'Minions Stuart, Kevin and Bob are recruited by Scarlet Overkill, a super-villain who, alongside her inventor husband Herb, hatches a plot to take over the world.',
+        'release_date':'2015-06-17'
+    },
+    {
+        'vote_count':1987,
+        'id':354912,
+        'video':false,
+        'vote_average':7.7,
+        'title':'Coco',
+        'popularity':245.113033,
+        'poster_path':'\/eKi8dIrr8voobbaGzDpe8w0PVbC.jpg',
+        'original_language':'en',
+        'original_title':'Coco',
+        'genre_ids':[
+            12,
+            16,
+            35,
+            10751
+        ],
+        'backdrop_path':'\/askg3SMvhqEl4OL52YuvdtY40Yb.jpg',
+        'adult':false,
+        'overview':"Despite his family’s baffling generations-old ban on music, Miguel dreams of becoming an accomplished musician like his idol, Ernesto de la Cruz. Desperate to prove his talent, Miguel finds himself in the stunning and colorful Land of the Dead following a mysterious chain of events. Along the way, he meets charming trickster Hector, and together, they set off on an extraordinary journey to unlock the real story behind Miguel's family history.",
+        'release_date':'2017-10-27'
+    },
+    {
+        'vote_count':397,
+        'id':460793,
+        'video':false,
+        'vote_average':5.9,
+        'title':"Olaf's Frozen Adventure",
+        'popularity':238.347249,
+        'poster_path':'\/47pLZ1gr63WaciDfHCpmoiXJlVr.jpg',
+        'original_language':'en',
+        'original_title':"Olaf's Frozen Adventure",
+        'genre_ids':[
+            12,
+            16,
+            35,
+            10751,
+            14,
+            10402
+        ],
+        'backdrop_path':'\/9K4QqQZg4TVXcxBGDiVY4Aey3Rn.jpg',
+        'adult':false,
+        'overview':'Olaf is on a mission to harness the best holiday traditions for Anna, Elsa, and Kristoff.',
+        'release_date':'2017-10-27'
+    },
+    {
+        'vote_count':3454,
+        'id':8844,
+        'video':false,
+        'vote_average':7,
+        'title':'Jumanji',
+        'popularity':227.23173,
+        'poster_path':'\/8wBKXZNod4frLZjAKSDuAcQ2dEU.jpg',
+        'original_language':'en',
+        'original_title':'Jumanji',
+        'genre_ids':[
+            12,
+            14,
+            10751
+        ],
+        'backdrop_path':'\/7k4zEgUZbzMHawDaMc9yIkmY1qR.jpg',
+        'adult':false,
+        'overview':"When siblings Judy and Peter discover an enchanted board game that opens the door to a magical world, they unwittingly invite Alan -- an adult who's been trapped inside the game for 26 years -- into their living room. Alan's only hope for freedom is to finish the game, which proves risky as all three find themselves running from giant rhinoceroses, evil monkeys and other terrifying creatures.",
+        'release_date':'1995-12-15'
+    }
+];
