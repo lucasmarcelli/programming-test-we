@@ -19,6 +19,7 @@ class Movies extends Store {
         super('http://api.themoviedb.org/3');
 
         this.movies = null;
+        this.details = {};
 
         this.get_popular = this.get_popular.bind(this);
         this.get_movie = this.get_movie.bind(this);
@@ -27,7 +28,7 @@ class Movies extends Store {
     get_popular({ prop }) {
         if(!this.movies) {
             this.doFetch({ url: '/movie/popular' }).then((response) => {
-                let movies = response.results.slice(0, 12);
+                let movies = response.results.slice(0, 30);
                 this.movies = movies;
                 this.emit(Movies.Actions.GET_POP_MOVIES.event, { prop, value: movies })
             })
@@ -38,10 +39,15 @@ class Movies extends Store {
 
     get_movie({ prop, params }) {
         let { id } = params;
-        this.doFetch({ url: '/movie/' + id }).then((response) => {
-            console.log(response);
-            this.emit(Movies.Actions.GET_MOVIE_DETAILS.event, { prop, value: response });
-        })
+        if(this.details[id]) {
+            this.emit(Movies.Actions.GET_MOVIE_DETAILS.event, { prop, value: this.details[id] });
+        } else {
+            this.doFetch({ url: '/movie/' + id }).then((response) => {
+                this.details[id] = response;
+                this.emit(Movies.Actions.GET_MOVIE_DETAILS.event, { prop, value: response });
+            })
+        }
+
     }
 }
 

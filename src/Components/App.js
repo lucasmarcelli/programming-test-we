@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Route, BrowserRouter as Router, Switch, withRouter } from 'react-router-dom'
-import { tempMovies } from '../temporarymovies';
 import withStore from '../Stores/withStore';
 
 import Landing from './Landing';

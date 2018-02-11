@@ -12,6 +12,14 @@
 
 5. run `yarn run start`
 
+## To Test
+
+1. Do step 1 to 4 above first.
+
+2. run `yarn test`
+
+3. react-scripts testing suite will come up, will run all suites, continue testing as desired. 
+
 
 If nothing shows up and/or the console throws a CORS error, you will need to either install
 a chrome extension here: https://chrome.google.com/webstore/detail/allow-control-allow-origi/nlfbmbojpeacfghkpbjhddihlkkiljbi
@@ -24,11 +32,7 @@ If it still doesn't work, ensure the correct `apikey` was added in.
 
 ## Choices and next steps
 
-I haven't used jest for testing in more than a year, so despite the fact that I prefer test-driven development in general, I didn't feel
-comfortable doing it in that way for this. I also decided that it would be most beneficial 
-for myself and the interview process if I left tests until the pair programming session, or if you'd like
-I can commit tests over the weekend - this gives me a chance to refresh myself with jest sufficiently.
-Ideally TDD *is* my general method, however.
+Total time spent: `5 hours`.
 
 I used my own flux-like store framework in lieu of redux, for the same reason - it has been more than a year 
 since I last used redux. If required, I can relearn it before the pair programming portion.
@@ -36,3 +40,7 @@ since I last used redux. If required, I can relearn it before the pair programmi
 I used sass, because its more extensible, despite the limited scope of the project here.
 
 I used css grid for layout, because pretty soon that will be the best way to do *anything* high level.
+
+I used `react-router-dom` for routing because it is the 'goto' routing module, and if the app needs new routes, adding them will be easier.
+
+Testing done using Jest and Enzyme. Did not get to `details.test.js` or any of the stores tests, as I didn't want to go over the max time of 5 hours.
